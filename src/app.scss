@@ -1,0 +1,25 @@
+@use './lib/styles/variables' as *;
+
+body {
+  font-family: $font-primary;
+  background-color: $color-bg;
+  color: $color-text;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+button {
+  background-color: $color-primary;
+  color: $color-text;
+  border: none;
+  border-radius: $radius-md;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  box-shadow: $shadow-soft;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
