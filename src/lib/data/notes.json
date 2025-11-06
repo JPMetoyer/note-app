@@ -17,13 +17,13 @@
   {
     "id": 2,
     "title": "Week 3 — Data Structures",
-    "description": "Notes on stacks, queues, and linked lists with examples.",
+    "description": "Detailed overview of linked lists and their variations.",
     "course": "COE 301",
     "semester": "Fall",
     "year": "2025",
     "professor": "Dr. Johnson",
     "pages": 6,
-    "pdfUrl": "/filler/tribune.pdf",
+    "pdfUrl": "/filler/coe301.pdf",
     "uploader": {
       "name": "Jonathan Li",
       "avatar": "/filler/jonathan.jpeg"
@@ -32,16 +32,272 @@
   {
     "id": 3,
     "title": "Week 5 — Sorting Algorithms",
-    "description": "Notes on stacks, queues, and linked lists with examples.",
+    "description": "Explores merge sort, quick sort, and bubble sort with pseudocode.",
     "course": "COE 301",
     "semester": "Fall",
     "year": "2025",
     "professor": "Dr. Johnson",
     "pages": 9,
-    "pdfUrl": "/filler/tribune.pdf",
+    "pdfUrl": "/filler/coe301.pdf",
     "uploader": {
       "name": "Jonathan Li",
       "avatar": "/filler/jonathan.jpeg"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Midterm Review — Key Concepts",
+    "description": "Condensed notes covering all major topics before the midterm.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 10,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Ava Patel",
+      "avatar": "/filler/ava.jpeg"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Recursion Deep Dive",
+    "description": "Step-by-step examples on recursive functions and call stacks.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 7,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Michael Chen",
+      "avatar": "/filler/michael.jpeg"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Week 7 — Graphs & Trees",
+    "description": "Introduction to BFS, DFS, and tree traversal algorithms.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 11,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Tara Singh",
+      "avatar": "/filler/tara.jpeg"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Week 8 — Hash Tables",
+    "description": "Understanding hashing functions, collisions, and chaining.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 5,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Carlos Mata",
+      "avatar": "/filler/carlos.jpeg"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Final Exam Study Pack",
+    "description": "All-in-one guide covering arrays, recursion, and graphs.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 12,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Taimur B",
+      "avatar": "/filler/taimur.jpeg"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Week 10 — Dynamic Programming",
+    "description": "Examples of memoization and bottom-up approaches.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 10,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Akshay Rao",
+      "avatar": "/filler/akshay.jpeg"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Extra Credit — Data Structures Quiz Review",
+    "description": "Short summaries and quiz-style review problems.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 6,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Ella Nguyen",
+      "avatar": "/filler/ella.jpeg"
+    }
+  },
+
+  {
+    "id": 11,
+    "title": "Week 1 — Introduction to Programming Logic",
+    "description": "Covers variables, loops, and conditionals with practical examples.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Nguyen",
+    "pages": 5,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Sophia Zhang",
+      "avatar": "/filler/sophia.jpeg"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Week 4 — Pointers and Memory",
+    "description": "Detailed breakdown of stack vs heap allocation and pointer safety.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Nguyen",
+    "pages": 8,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "David Park",
+      "avatar": "/filler/david.jpeg"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Week 6 — Linked Lists Explained",
+    "description": "Visual guide to singly, doubly, and circular linked lists.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 9,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Amara Osei",
+      "avatar": "/filler/amara.jpeg"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Week 9 — Recursion Practice Problems",
+    "description": "Includes classic recursion problems like factorial, Fibonacci, and subset sums.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 11,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Noah Patel",
+      "avatar": "/filler/noah.jpeg"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Week 11 — Graph Algorithms",
+    "description": "Notes on Dijkstra’s, Bellman-Ford, and minimum spanning trees.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 10,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Maya Thompson",
+      "avatar": "/filler/maya.jpeg"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Final Review — Data Structures & Algorithms",
+    "description": "Comprehensive end-of-semester summary of all topics.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 14,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Ethan Lee",
+      "avatar": "/filler/ethan.jpeg"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Quiz 1 Study Guide",
+    "description": "Short notes on loops, arrays, and functions.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 3,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Grace Kim",
+      "avatar": "/filler/grace.jpeg"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Extra Practice — Dynamic Programming",
+    "description": "Contains problems and diagrams on tabulation vs memoization.",
+    "course": "COE 301",
+    "semester": "Spring",
+    "year": "2025",
+    "professor": "Dr. Kim",
+    "pages": 9,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Liam Brooks",
+      "avatar": "/filler/liam.jpeg"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Lecture Slides Summary — Arrays",
+    "description": "Condensed lecture notes for quick review before quizzes.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Nguyen",
+    "pages": 7,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Isabella Romero",
+      "avatar": "/filler/isabella.jpeg"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Lab Session Notes — Stack Implementations",
+    "description": "Covers hands-on coding exercises and example outputs.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 8,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Ryan Walker",
+      "avatar": "/filler/ryan.jpeg"
     }
   }
 ]

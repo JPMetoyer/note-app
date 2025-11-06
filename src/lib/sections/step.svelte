@@ -1,32 +1,32 @@
 <script lang="ts">
 	import { Check } from "lucide-svelte";
 
-	const process = [
-		{
-			image: "step1.png",
-			title: "Upload",
-			description:
-				"Share your study materials in seconds — just drag, drop, and add a few details."
-		},
-		{
-			image: "step2.png",
-			title: "Browse",
-			description:
-				"Explore notes from real students, filtered by course, semester, or professor."
-		},
-		{
-			image: "step3.png",
-			title: "Interact",
-			description:
-				"Like, save, and discuss notes with classmates — learning becomes collaborative."
-		},
-		{
-			image: "step4.png",
-			title: "Save",
-			description:
-				"Build your own study library with the best notes all in one place."
-		}
-	];
+const process = [
+  {
+    image: "step1",
+    title: "Upload",
+    description:
+      "Share your notes in seconds — drag, drop, and add course details."
+  },
+  {
+    image: "step2",
+    title: "Browse",
+    description:
+      "Explore verified notes by class, semester, or professor — all from real students."
+  },
+  {
+    image: "step3",
+    title: "Interact",
+    description:
+      "Preview PDFs, ask questions, and discuss topics with your classmates in real time."
+  },
+  {
+    image: "step4",
+    title: "Save",
+    description:
+      "Bookmark your favorite notes and access AI-powered insights to study smarter."
+  }
+];
 </script>
 
 <article id="process">
@@ -56,7 +56,7 @@
 		{#each process as { image, title, description }, index}
 			<figure class="step" style="--top-offset: {6 + 1.5 * index}rem; --padding: {4 - 0.5 * index}rem">
 				<div class="card">
-					<img src="/filler/placeholder.avif" alt={title} />
+					<img src="/images/{image}.png" alt={title} />
 					<h1>{title}</h1>
 					<p>{description}</p>
 				</div>
