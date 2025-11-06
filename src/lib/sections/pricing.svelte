@@ -160,6 +160,10 @@
 section#prices {
             margin-top: 10rem;
 
+             @media screen and (max-width: 800px) {
+            margin: 0 auto;
+        }
+
                 #tagline {
         color: $color-primary;
 				font-size: 2rem;
@@ -167,7 +171,7 @@ section#prices {
 				font-weight: 550;
     }
 
-    
+
 
             
     display: flex;
@@ -179,6 +183,11 @@ section#prices {
         display: flex;
         flex-direction: row;
         gap: 3rem;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            margin: 0 auto;
+        }
 
         
 
