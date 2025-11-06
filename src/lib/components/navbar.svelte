@@ -35,7 +35,7 @@ let profileOpen = false;
     <div id="links">
       <a href="/" on:click|preventDefault={() => (uploadOpen = true)}>Upload Notes</a>
       <a href="/library">Library</a>
-      <a href="/">Leaderboard</a>
+      <a href="/leaderboard">Leaderboard</a>
     </div>
 
     <button class="avatar-btn" aria-label="Profile" on:click={() => (profileOpen = !profileOpen)}>
