@@ -106,6 +106,7 @@
   @use '$lib/styles/variables.scss' as *;
 
   section#library {
+    height: 100vh;
     width: 100%;
     margin: 7rem auto 6rem auto;
     display: flex;

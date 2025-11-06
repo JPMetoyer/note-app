@@ -4,6 +4,9 @@
 
 	let { children } = $props();
 	import Navbar from '../lib/components/navbar.svelte';
+	import Footer from "../lib/components/Footer.svelte";
+	  import AuthGate from '$lib/components/AuthGate.svelte';
+
 </script>
 
 
@@ -18,3 +21,9 @@
 <main>
 	{@render children?.()}
 </main>
+
+
+<Footer/>
+
+
+<AuthGate />

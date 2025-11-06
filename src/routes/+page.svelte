@@ -8,6 +8,10 @@
         <Testimonials />
         <Pricing />
 
+
+
+        <a href="/" class="button">Ready to Study Smarter? </a>
+
     </section>
 </main>
 
@@ -27,6 +31,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+a {
+
+    margin-top: 10rem;
+  background-color: $color-primary;
+  color: $color-text;
+  border: none;
+  border-radius: $radius-md;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: all 240ms ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+           
 
           
         }
