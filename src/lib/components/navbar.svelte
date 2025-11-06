@@ -1,5 +1,8 @@
 <script lang="ts">
   import Searchbar from "./searchbar.svelte";
+  import Profilepopup from "./profilepopup.svelte";
+let profileOpen = false;
+
 
   let menuOpen = false;
 
@@ -10,8 +13,15 @@
   function closeMenu() {
     menuOpen = false;
   }
+
+    import UploadNotesModal from "../components/uploadnotes.svelte";
+  let uploadOpen = false;
+
+
+
 </script>
 
+<!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role -->
 <nav>
   <a href="/" id="logo">Nota.</a>
 
@@ -23,14 +33,16 @@
   <!-- Right Section -->
   <div id="right">
     <div id="links">
-      <a href="/">Upload Notes</a>
-      <a href="/">Classes</a>
+      <a href="/" on:click|preventDefault={() => (uploadOpen = true)}>Upload Notes</a>
+      <a href="/library">Library</a>
       <a href="/">Leaderboard</a>
     </div>
 
-    <button class="avatar-btn" aria-label="Profile">
+    <button class="avatar-btn" aria-label="Profile" on:click={() => (profileOpen = !profileOpen)}>
       <img src="/icons/profile.png" alt="profile icon" />
     </button>
+
+      <Profilepopup open={profileOpen} />
 
     <!-- Burger Menu Button -->
     <button
@@ -51,10 +63,17 @@
   </div>
 </nav>
 
+<UploadNotesModal open={uploadOpen} onclose={() => (uploadOpen = false)} />
+
+
+
 <!-- Overlay -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class:overlay-open={menuOpen} class="overlay" on:click={closeMenu}></div>
 
 <!-- Mobile Drawer -->
+<!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role -->
 <aside
   id="mobile-menu"
   class="drawer"
@@ -69,8 +88,8 @@
   </header>
 
   <div class="drawer-content">
-    <a href="/" on:click={closeMenu}>Upload Notes</a>
-    <a href="/" on:click={closeMenu}>Classes</a>
+    <a href="/" on:click={closeMenu} on:click|preventDefault={() => (uploadOpen = true)}>Upload Notes</a>
+    <a href="/library" on:click={closeMenu}>Library</a>
     <a href="/" on:click={closeMenu}>Leaderboard</a>
     <hr />
     <a href="/" on:click={closeMenu}>Profile</a>

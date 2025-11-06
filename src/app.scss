@@ -2,7 +2,6 @@
 
 body {
   font-family: $font-primary;
-  background-color: $color-bg;
   color: $color-text;
   margin: 0;
   padding: 0;
@@ -17,7 +16,7 @@ button {
   border-radius: $radius-md;
   padding: 0.6rem 1rem;
   cursor: pointer;
-  box-shadow: $shadow-soft;
+  transition: all 240ms ease-in-out;
 
   &:hover {
     background-color: $color-primary-dark;

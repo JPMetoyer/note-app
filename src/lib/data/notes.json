@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Week 2 — Arrays & Matrices",
+    "description": "Notes on stacks, queues, and linked lists with examples.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 8,
+    "pdfUrl": "/filler/coe301.pdf",
+    "uploader": {
+      "name": "Jonathan Li",
+      "avatar": "/filler/jonathan.jpeg"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Week 3 — Data Structures",
+    "description": "Notes on stacks, queues, and linked lists with examples.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 6,
+    "pdfUrl": "/filler/tribune.pdf",
+    "uploader": {
+      "name": "Jonathan Li",
+      "avatar": "/filler/jonathan.jpeg"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Week 5 — Sorting Algorithms",
+    "description": "Notes on stacks, queues, and linked lists with examples.",
+    "course": "COE 301",
+    "semester": "Fall",
+    "year": "2025",
+    "professor": "Dr. Johnson",
+    "pages": 9,
+    "pdfUrl": "/filler/tribune.pdf",
+    "uploader": {
+      "name": "Jonathan Li",
+      "avatar": "/filler/jonathan.jpeg"
+    }
+  }
+]

@@ -1,15 +1,27 @@
-<!-- No <script> block needed -->
-<form class="search-form" role="search" aria-label="Global search" on:submit|preventDefault>
+<script lang="ts">
+  import { goto } from '$app/navigation';
+  let query = '';
+
+  function handleSubmit(e: Event) {
+    e.preventDefault();
+    if (query.trim() !== '') {
+      goto(`/library?search=${encodeURIComponent(query.trim())}`);
+      query = '';
+    }
+  }
+</script>
+
+<form class="search-form" role="search" aria-label="Global search" on:submit={handleSubmit}>
   <span class="icon" aria-hidden="true">🔍</span>
   <input
     class="input"
     type="search"
     placeholder="Search by class, professor, or topic…"
+    bind:value={query}
   />
 </form>
 
 <style lang="scss">
-  /* if you have variables set up */
   @use '$lib/styles/variables' as *;
 
   .search-form {
@@ -20,14 +32,15 @@
     width: 100%;
     max-width: 640px;
 
-    background: $color-bg;               /* e.g., #F9FBFF */
-    border: 1px solid $color-border;     /* e.g., #E1E8F0 */
-    border-radius: $radius-md;           /* e.g., 8px */
+    background: $color-bg;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
     padding: .55rem .7rem;
     box-shadow: $shadow-soft;
+    transition: all 0.2s ease;
 
     &:focus-within {
-      border-color: $color-primary-dark; /* e.g., #5CB0F6 */
+      border-color: $color-primary-dark;
       box-shadow: 0 0 0 2px rgba(92,176,246,.22);
       background: #fff;
     }
@@ -47,11 +60,11 @@
     border: 0;
     outline: 0;
     background: transparent;
-    color: $color-text;                  /* e.g., #2E3440 */
+    color: $color-text;
     font: inherit;
 
     &::placeholder {
-      color: $color-text-secondary;      /* e.g., #5C677D */
+      color: $color-text-secondary;
       opacity: .9;
     }
   }
