@@ -12,19 +12,37 @@
     tier: Tier;
     avatar: string;
   };
+const leaders: Leader[] = [
+  { id: 1,  name: 'Akshay Patel', university: 'UT Austin', points: 1280, uploads: 24, upvotes: 860, tier: 'Campus Pro',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=AkshayPatel' },
 
-  const leaders: Leader[] = [
-    { id: 1, name: 'Akshay Patel', university: 'UT Austin', points: 1280, uploads: 24, upvotes: 860, tier: 'Campus Pro',  avatar: '/filler/akshay.jpeg' },
-    { id: 2, name: 'Jordan Kim',   university: 'UT Austin', points: 1040, uploads: 18, upvotes: 690, tier: 'Student Plus', avatar: '/filler/akshay.jpeg' },
-    { id: 3, name: 'Riley Chen',   university: 'UT Austin', points: 990,  uploads: 12, upvotes: 730, tier: 'Student Plus', avatar: '/filler/akshay.jpeg' },
-    { id: 4, name: 'Taylor Ross',  university: 'UT Austin', points: 955,  uploads: 20, upvotes: 540, tier: 'Starter',      avatar: '/filler/akshay.jpeg' },
-    { id: 5, name: 'Sam Rivera',   university: 'UT Austin', points: 910,  uploads: 15, upvotes: 560, tier: 'Campus Pro',   avatar: '/filler/akshay.jpeg' },
-    { id: 6, name: 'Casey Shah',   university: 'UT Austin', points: 890,  uploads: 10, upvotes: 610, tier: 'Starter',      avatar: '/filler/akshay.jpeg' },
-    { id: 7, name: 'Alex Nguyen',  university: 'UT Austin', points: 860,  uploads: 11, upvotes: 580, tier: 'Student Plus', avatar: '/filler/akshay.jpeg' },
-    { id: 8, name: 'Sydney Lee',   university: 'UT Austin', points: 820,  uploads:  9, upvotes: 575, tier: 'Starter',      avatar: '/filler/akshay.jpeg' },
-    { id: 9, name: 'Noah White',   university: 'UT Austin', points: 795,  uploads: 14, upvotes: 430, tier: 'Campus Pro',   avatar: '/filler/akshay.jpeg' },
-    { id:10, name: 'Priya Rao',    university: 'UT Austin', points: 770,  uploads:  8, upvotes: 520, tier: 'Starter',      avatar: '/filler/akshay.jpeg' }
-  ];
+  { id: 2,  name: 'Jordan Kim', university: 'UT Austin', points: 1040, uploads: 18, upvotes: 690, tier: 'Student Plus',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=JordanKim' },
+
+  { id: 3,  name: 'Riley Chen', university: 'UT Austin', points: 990, uploads: 12, upvotes: 730, tier: 'Student Plus',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=RileyChen' },
+
+  { id: 4,  name: 'Taylor Ross', university: 'UT Austin', points: 955, uploads: 20, upvotes: 540, tier: 'Starter',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=TaylorRoss' },
+
+  { id: 5,  name: 'Sam Rivera', university: 'UT Austin', points: 910, uploads: 15, upvotes: 560, tier: 'Campus Pro',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=SamRivera' },
+
+  { id: 6,  name: 'Casey Shah', university: 'UT Austin', points: 890, uploads: 10, upvotes: 610, tier: 'Starter',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=CaseyShah' },
+
+  { id: 7,  name: 'Alex Nguyen', university: 'UT Austin', points: 860, uploads: 11, upvotes: 580, tier: 'Student Plus',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=AlexNguyen' },
+
+  { id: 8,  name: 'Sydney Lee', university: 'UT Austin', points: 820, uploads: 9, upvotes: 575, tier: 'Starter',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=SydneyLee' },
+
+  { id: 9,  name: 'Noah White', university: 'UT Austin', points: 795, uploads: 14, upvotes: 430, tier: 'Campus Pro',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=NoahWhite' },
+
+  { id: 10, name: 'Priya Rao', university: 'UT Austin', points: 770, uploads: 8, upvotes: 520, tier: 'Starter',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=PriyaRao' }
+];
 
   // ---- View state ----
   type View = 'Overall' | 'Top Uploaders' | 'Most Upvoted' | 'Pro Members';

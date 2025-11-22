@@ -103,7 +103,7 @@
           <li class="note">
             <div class="meta">
               <span class="title">Week 3 – Data Structures</span>
-              <span class="by">Shared by Akshay</span>
+              <span class="by">Shared by Jonathan</span>
             </div>
             <a href="/filler/tribune.pdf" target="_blank" rel="noopener" class="cta">Open</a>
           </li>

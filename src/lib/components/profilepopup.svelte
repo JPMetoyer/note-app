@@ -30,6 +30,7 @@
             <li>FIN 357 </li>
         </ul>
 
+
      </div>
 
     <span class="border"></span>
@@ -49,6 +50,9 @@
             <img src="/icons/comment.png" alt="">
             Comments Made: 57
         </p>
+
+
+                <a href="/profile" id="view">View More</a>
 
      </div>
 
@@ -74,6 +78,12 @@
 
       display: flex;
       flex-direction: column;    
+
+      #view {
+        margin-right: 2rem;
+        align-self: center;
+        color: $color-primary-dark;
+      }
 
       #header {
         display: flex;

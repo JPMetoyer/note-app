@@ -7,10 +7,10 @@
 
   // --- Fake "logged-in" user (demo) ---
   const user = {
-    name: 'Akshay Patel',
+    name: 'Jonathan Li',
     university: 'UT Austin 🤠',
     tier: 'Campus Pro' as 'Starter' | 'Student Plus' | 'Campus Pro',
-    avatar: '/filler/akshay.jpeg'
+    avatar: '/filler/jonathan.jpeg'
   };
 
   // --- Mock notes ---
@@ -24,7 +24,7 @@
       year: '2025',
       professor: 'Dr. Johnson',
       pages: 8,
-      pdfUrl: '/filler/tribune.pdf',
+      pdfUrl: '/filler/coe301.pdf',
       uploader: { name: user.name, avatar: user.avatar }
     },
     {
@@ -41,33 +41,68 @@
     }
   ];
 
-  const savedNotes: Note[] = [
-    {
-      id: 201,
-      title: 'Probability Cheatsheet',
-      description: 'Distributions, expectation, variance—1-pager.',
-      course: 'M 362K',
-      semester: 'Spring',
-      year: '2025',
-      professor: 'Prof. Nguyen',
-      pages: 3,
-      pdfUrl: '/filler/tribune.pdf',
-      uploader: { name: 'Jordan Kim', avatar: '/filler/akshay.jpeg' }
-    },
-    {
-      id: 202,
-      title: 'Linear Algebra – Eigenvalues',
-      description: 'Step-by-step eigenvalue/eigenvector problems.',
-      course: 'M 341',
-      semester: 'Fall',
-      year: '2025',
-      professor: 'Dr. Chen',
-      pages: 5,
-      pdfUrl: '/filler/tribune.pdf',
-      uploader: { name: 'Riley Chen', avatar: '/filler/akshay.jpeg' }
+const savedNotes: Note[] = [
+  {
+    id: 201,
+    title: "Probability Cheatsheet",
+    description: "Distributions, expectation, variance—1-pager.",
+    course: "M 362K",
+    semester: "Spring",
+    year: "2025",
+    professor: "Prof. Nguyen",
+    pages: 3,
+    pdfUrl: "/filler/tribune.pdf",
+    uploader: { 
+      name: "Miles Carter", 
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=MilesCarter" 
     }
-  ];
-
+  },
+  {
+    id: 202,
+    title: "Linear Algebra – Eigenvalues",
+    description: "Step-by-step eigenvalue problems.",
+    course: "M 341",
+    semester: "Fall",
+    year: "2025",
+    professor: "Dr. Chen",
+    pages: 5,
+    pdfUrl: "/filler/tribune.pdf",
+    uploader: { 
+      name: "Serena Park", 
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=SerenaPark" 
+    }
+  },
+  {
+    id: 203,
+    title: "Intro to Python – Loops",
+    description: "Examples of while loops, for loops, and iterations.",
+    course: "CS 303E",
+    semester: "Fall",
+    year: "2025",
+    professor: "Dr. Alvarez",
+    pages: 4,
+    pdfUrl: "/filler/tribune.pdf",
+    uploader: { 
+      name: "Leo Patterson", 
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=LeoPatterson" 
+    }
+  },
+  {
+    id: 204,
+    title: "Government Exam 2 Review",
+    description: "Key cases, structures of government themes.",
+    course: "GOV 310L",
+    semester: "Spring",
+    year: "2025",
+    professor: "Prof. Hill",
+    pages: 7,
+    pdfUrl: "/filler/tribune.pdf",
+    uploader: { 
+      name: "Camila Reyes", 
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=CamilaReyes" 
+    }
+  }
+];
   // --- Tab + popup state ---
   type Tab = 'notes' | 'saved' | 'stats';
   let tab: Tab = 'notes';

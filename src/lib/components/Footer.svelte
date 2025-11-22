@@ -29,6 +29,9 @@ footer {
   border-top: 1px solid lightgray;
   margin-top: 5rem;
   background-color: #fff;
+    // position: relative;
+    // z-index: 10;
+
 
   div#left {
     display: flex;
@@ -84,7 +87,7 @@ footer {
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
-
+  
     div#left,
     div#right {
       margin: 0;
